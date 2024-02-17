@@ -1,18 +1,33 @@
 function App() {
-  return (
-    <>
-      <div className="flex flex-col gap-10 justify-center items-center text-white my-4">
-        <h1 className="text-5xl">Template: React + TypeScript + Tailwind</h1>
-        <p className="w-[70ch] text-3xl">
-          This template is powered by Vite, a fast and opinionated frontend
-          build tool. Leveraging the efficiency of React for dynamic UIs, the
-          robustness of TypeScript for static typing, and the utility-first
-          approach of Tailwind CSS for styling, this combination crafted a
-          modern and streamlined development environment.
-        </p>
-      </div>
-    </>
-  );
+    return (
+        <>
+            <div className="bg-black text-white min-h-screen flex flex-col items-center justify-center">
+                <header className="text-4xl font-bold mb-8">
+                    Welcome to Vite React + TypeScript + Tailwind + Shadcn
+                    Template!
+                </header>
+                <main className="text-lg text-center">
+                    <p>
+                        Congratulations! You've successfully set up a project
+                        with Vite, React, TypeScript, Tailwind CSS, and Shadow
+                        DOM styling using Shadcn.
+                    </p>
+                    <p className="mt-4">
+                        Get started by exploring the code in the{' '}
+                        <code>src</code> directory and making it your own.
+                    </p>
+                    Don't forget to configure shadcn/ui with:{' '}
+                    <code>npx shadcn-ui@latest init</code>
+                </main>
+                <footer className="mt-8 text-sm text-gray-500">
+                    <p>
+                        Happy coding with Vite, React, TypeScript, Tailwind, and
+                        Shadcn!
+                    </p>
+                </footer>
+            </div>
+        </>
+    )
 }
 
-export default App;
+export default App
