@@ -16,8 +16,6 @@ function App() {
                         Get started by exploring the code in the{' '}
                         <code>src</code> directory and making it your own.
                     </p>
-                    Don't forget to configure shadcn/ui with:{' '}
-                    <code>npx shadcn-ui@latest init</code>
                 </main>
                 <footer className="mt-8 text-sm text-gray-500">
                     <p>
