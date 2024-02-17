@@ -4,7 +4,6 @@ function App() {
             <div className="bg-black text-white min-h-screen flex flex-col items-center justify-center">
                 <header className="text-4xl font-bold mb-8">
                     Welcome to Vite React + TypeScript + Tailwind + Shadcn
-                    Template!
                 </header>
                 <main className="text-lg text-center">
                     <p>
