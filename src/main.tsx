@@ -1,5 +1,4 @@
 import ReactDOM from 'react-dom/client'
-
 import './index.scss'
 import { router } from './BrowserRouter.tsx'
 import { RouterProvider } from 'react-router-dom'
