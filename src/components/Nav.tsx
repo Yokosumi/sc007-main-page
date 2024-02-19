@@ -19,7 +19,7 @@ export const Nav = () => {
 
     return (
         <>
-            <ul className="border-3 flex gap-4 border-4  p-4">
+            <ul className="border-3 my-4 flex gap-4  border-4 py-4">
                 {routes.map((route) => (
                     <Button variant={'link'} size={'lg'}>
                         <NavLink
