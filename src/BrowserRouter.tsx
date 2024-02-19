@@ -1,10 +1,14 @@
-import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, Navigate } from 'react-router-dom'
 import App from './App.tsx'
-import { Nav } from './components/Nav.tsx'
+import { ErrorPage } from './pages/ErrorPage.tsx'
+import { WelcomePage } from './pages/WelcomePage.tsx'
+import { ProjectsPage } from './pages/ProjectsPage.tsx'
+import { TutorialPage } from './pages/TutorialPage.tsx'
 
-const router = createBrowserRouter([
+export const router = createBrowserRouter([
     {
         path: '/',
+        errorElement: <ErrorPage />,
         element: <App />,
         children: [
             {
@@ -13,7 +17,7 @@ const router = createBrowserRouter([
             },
             {
                 path: 'projects',
-                element: <ProjectPage />,
+                element: <ProjectsPage />,
             },
             {
                 path: 'tutorials',
