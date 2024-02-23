@@ -19,7 +19,7 @@ export const Nav = () => {
 
     return (
         <div className="mx-auto mt-4 flex  w-full justify-center rounded border-4 bg-blue-400 px-2 ring-4 ring-pink-300">
-            <ul className="my-4 flex gap-6 py-4 font-mono">
+            <ul className="my-4 flex gap-8 py-4 font-mono">
                 {routes.map((route) => (
                     <Button
                         className="pb-4 text-2xl"
@@ -30,7 +30,7 @@ export const Nav = () => {
                             to={route.path}
                             className={({ isActive }) =>
                                 isActive
-                                    ? 'before:content-simpleStar border-b-4 border-yellow-500 font-semibold text-yellow-400 transition duration-500 ease-in'
+                                    ? 'border-b-4 border-yellow-500 font-semibold text-yellow-400 transition duration-500 ease-in before:content-simpleStar'
                                     : 'text-blue-700 transition duration-500 ease-out'
                             }
                         >
