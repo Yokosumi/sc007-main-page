@@ -24,7 +24,7 @@ export const Nav = () => {
                     <NavLink
                         to={route.path}
                         className={({ isActive }) =>
-                            `${isActive ? 'bg-orange-500 ' : 'text-black '} rounded p-2  transition duration-500 ease-in-out`
+                            `${isActive ? 'bg-orange-500 text-primary-foreground' : 'text-secondary-foreground'} rounded p-2  transition duration-500 ease-in-out`
                         }
                     >
                         {route.name}
