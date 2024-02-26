@@ -17,9 +17,6 @@ module.exports = {
             },
         },
         extend: {
-            content: {
-                simpleStar: 'url("./public/icons/simple_star.ico")',
-            },
             colors: {
                 border: 'hsl(var(--border))',
                 input: 'hsl(var(--input))',
