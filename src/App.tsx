@@ -5,7 +5,7 @@ function App() {
     return (
         <>
             <Nav />
-            <main className="max-h-full p-4">
+            <main className="max-h-full  px-20 py-4">
                 <Outlet />
             </main>
         </>

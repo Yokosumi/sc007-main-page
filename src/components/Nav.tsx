@@ -18,27 +18,19 @@ export const Nav = () => {
     ]
 
     return (
-        <div className="">
-            <ul className="flex justify-end  px-6 pt-6 font-mono">
-                {routes.map((route) => (
-                    <Button
-                        className="pb-4 text-2xl"
-                        variant={'link'}
-                        size={'lg'}
+        <ul className="flex justify-center gap-4 p-6 font-mono">
+            {routes.map((route) => (
+                <Button className="pb-4 text-2xl" variant={'link'} size={'lg'}>
+                    <NavLink
+                        to={route.path}
+                        className={({ isActive }) =>
+                            `${isActive ? 'bg-orange-500 ' : 'text-black '} rounded p-2  transition duration-500 ease-in-out`
+                        }
                     >
-                        <NavLink
-                            to={route.path}
-                            className={({ isActive }) =>
-                                isActive
-                                    ? 'bg-orange-500 text-black transition duration-500 ease-in '
-                                    : 'text-blue-700 transition duration-500 ease-out'
-                            }
-                        >
-                            {route.name}
-                        </NavLink>
-                    </Button>
-                ))}
-            </ul>
-        </div>
+                        {route.name}
+                    </NavLink>
+                </Button>
+            ))}
+        </ul>
     )
 }
