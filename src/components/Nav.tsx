@@ -30,7 +30,7 @@ export const Nav = () => {
                             to={route.path}
                             className={({ isActive }) =>
                                 isActive
-                                    ? 'border-b-4 border-yellow-500 font-semibold text-yellow-400 transition duration-500 ease-in before:content-simpleStar'
+                                    ? 'border-b-4 border-yellow-500 font-semibold text-yellow-400 transition duration-500 ease-in '
                                     : 'text-blue-700 transition duration-500 ease-out'
                             }
                         >
