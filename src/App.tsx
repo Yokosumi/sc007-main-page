@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom'
 
 function App() {
     return (
-        <div className="text-white">
+        <div className="text-xl text-primary-foreground">
             <Nav />
             <main className="max-h-full  px-20 py-4 font-mono">
                 <Outlet />
