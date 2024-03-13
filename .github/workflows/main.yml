@@ -27,7 +27,7 @@ jobs:
         run: |
           ssh -t -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} <<'EOF'
           cd /home/selman/projects/sc007-main-page
-          export PATH=$PATH:/home/output/.nvm/versions/node/v21.6.2/bin
+          export PATH=$PATH:/home/selman/.nvm/versions/node/v21.6.1/bin
           echo $PATH
           git pull
           npm install
