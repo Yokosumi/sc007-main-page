@@ -30,6 +30,7 @@ jobs:
                   export PATH=$PATH:/home/selman/.nvm/versions/node/v21.6.1/bin
                   echo $PATH
                   git pull
-                  npm run deploy
+                  npm run build
+                  pm2 restart sc007-main-page
                   exit
                   EOF
