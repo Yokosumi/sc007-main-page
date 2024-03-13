@@ -34,4 +34,4 @@ jobs:
           npm run build
           pm2 reload sc007-main-page
           exit
-          EOF
+EOF
